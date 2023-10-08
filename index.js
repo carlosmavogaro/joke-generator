@@ -1,28 +1,28 @@
 const jokes = [
     {
-        partOne: 'a',
-        partTwo: 'b',
-        partThree: 'c',
+        partOne: 'Man, I saw a squirrel today. That little guy was living his best life.',
+        partTwo: 'He\'s probably out there right now, planning his retirement, thinking,',
+        partThree: "'One more nut, and I'm outta here!'",
     },
     {
-        partOne: 'd',
-        partTwo: 'e',
-        partThree: 'f',
+        partOne: 'You know what\'s more elusive than Bigfoot?',
+        partTwo: 'A good Wi-Fi signal in a coffee shop. It\'s like they\'re hiding it behind the barista\'s secret menu.',
+        partThree: "'Can I get a Venti Mocha Latte with extra bars of Wi-Fi, please?'",
     },
     {
-        partOne: 'g',
-        partTwo: 'h',
-        partThree: 'i',
+        partOne: 'I saw a pigeon the other day,',
+        partTwo: 'just strutting its stuff like it owns the city. I thought,',
+        partThree: "'Man, that bird's got more confidence than I do at a family reunion.'",
     },
     {
-        partOne: 'j',
-        partTwo: 'k',
-        partThree: 'l',
+        partOne: 'I tried to fold a fitted sheet the other day.',
+        partTwo: 'It\'s like trying to fold a mattress into a fortune cookie.',
+        partThree: 'I ended up just rolling it into a ball and stuffing it in the closet. Sheet-folding: 0, Me: 1.',
     },
     {
-        partOne: 'm',
-        partTwo: 'n',
-        partThree: 'o',
+        partOne: 'I tried to cook a fancy meal the other night,',
+        partTwo: 'but it turned into a fire hazard faster than you can say \'gourmet.\'',
+        partThree: 'Let\'s just say my smoke alarm thinks I\'m a Michelin-star chef now.',
     },
 ];
 
@@ -39,7 +39,7 @@ const createRamdonJoke = arr => {
     const partOne = jokes[arr[0]].partOne;
     const partTwo = jokes[arr[1]].partTwo;
     const partThree = jokes[arr[2]].partThree;
-    return partOne + partTwo + partThree;
+    return `${partOne} ${partTwo} ${partThree}`;
 }
 
 console.log(createRamdonJoke(randomizeThreeNums()));
