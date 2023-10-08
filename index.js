@@ -1,3 +1,4 @@
+// Jokes are split into three different parts, so the output can be truly random.
 const jokes = [
     {
         partOne: 'Man, I saw a squirrel today. That little guy was living his best life.',
@@ -26,6 +27,7 @@ const jokes = [
     },
 ];
 
+// Randomizes three different numbers into an array so it can access the jokes array.
 const randomizeThreeNums = () => {
     const numArr = [];
     for (let i = 0; i < 3; i++) {
@@ -35,12 +37,13 @@ const randomizeThreeNums = () => {
     return numArr;
 }
 
-const createRamdonJoke = arr => {
+// Function that creates the structure of the joke using three different parts
+const createRandomJoke = arr => {
     const partOne = jokes[arr[0]].partOne;
     const partTwo = jokes[arr[1]].partTwo;
     const partThree = jokes[arr[2]].partThree;
     return `${partOne} ${partTwo} ${partThree}`;
 }
 
-console.log(createRamdonJoke(randomizeThreeNums()));
+console.log(createRandomJoke(randomizeThreeNums()));
 
